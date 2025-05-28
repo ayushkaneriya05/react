@@ -3,6 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Ex1 from './Ex1.jsx'
+import Counter from './Counter.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    {/* <App /> */}
+    <Ex1 />
+    {/* <Counter /> */}
+  </StrictMode>
+)
 
 // const anotherElement = (
 //   <a href="https://google.com" target="_blank">Visit Google</a>
@@ -22,14 +31,8 @@ import Ex1 from './Ex1.jsx'
 //   },
 //   "Visit Google - ",anotherUser
 // )
+// console.log(reactElement);
 
 // createRoot(document.getElementById('root')).render(
 //   reactElement
 // )
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <App /> */}
-    <Ex1 />
-  </StrictMode>
-)
